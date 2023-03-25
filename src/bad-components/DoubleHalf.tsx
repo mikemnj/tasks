@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import { dhValue, setDhValue } from "./DoubleHalfState";
+
 interface doubleValues {
     // The type is a function that consumes a boolean and returns void
     setDhValue: (newDH: number) => void;
@@ -16,6 +16,7 @@ function Halver({ setDhValue, dhValue }: doubleValues): JSX.Element {
 }
 
 export function DoubleHalf(): JSX.Element {
+    const [dhValue, setDhValue] = useState<number>(10);
     return (
         <div>
             <h1>Double Half</h1>
