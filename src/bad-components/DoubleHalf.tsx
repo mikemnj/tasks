@@ -16,7 +16,6 @@ function Halver({ setDhValue, dhValue }: doubleValues): JSX.Element {
 }
 
 export function DoubleHalf(): JSX.Element {
-    const [dhValue, setDhValue] = useState<number>(10);
     return (
         <div>
             <h1>Double Half</h1>
